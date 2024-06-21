@@ -13,6 +13,9 @@ public class Car
     
     public int Number { get; set; }
     
+    [ConcurrencyCheck]
+    public byte[] RowVersion { get; set; }
+    
     public CarManufacturer CarManufacturer { get; set; }
     
     public ICollection<Driver> Drivers { get; set; }

@@ -15,6 +15,9 @@ public class Driver
     public DateTime Birthday { get; set; }
     
     public int CarId { get; set; }
+    
+    [ConcurrencyCheck]
+    public byte[] RowVersion { get; set; }
 
     public Car Car { get; set; }
     

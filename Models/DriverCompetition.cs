@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Abpd_Test2.Models;
 
 public class DriverCompetition
@@ -7,6 +9,9 @@ public class DriverCompetition
     public int CompetitionId { get; set; }
     
     public DateTime Date { get; set; }
+    
+    [ConcurrencyCheck]
+    public byte[] RowVersion { get; set; }
 
     public Driver Driver { get; set; }
     

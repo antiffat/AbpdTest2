@@ -8,6 +8,9 @@ public class CarManufacturer
     
     [Required, MaxLength(200)]
     public string Name { get; set; }
+    
+    [ConcurrencyCheck]
+    public byte[] RowVersion { get; set; }
 
     public ICollection<Car> Cars { get; set; }
 }
