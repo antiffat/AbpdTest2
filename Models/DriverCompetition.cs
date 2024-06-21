@@ -4,6 +4,7 @@ namespace Abpd_Test2.Models;
 
 public class DriverCompetition
 {
+    [Key]
     public int DriverId { get; set; }
     
     public int CompetitionId { get; set; }

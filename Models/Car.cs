@@ -4,6 +4,7 @@ namespace Abpd_Test2.Models;
 
 public class Car
 {
+    [Key]
     public int Id { get; set; }
     
     public int CarManufacturerId { get; set; }

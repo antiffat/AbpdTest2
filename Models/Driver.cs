@@ -4,6 +4,7 @@ namespace Abpd_Test2.Models;
 
 public class Driver
 {
+    [Key]
     public int Id { get; set; }
     
     [Required, MaxLength(200)]
