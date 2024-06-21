@@ -19,7 +19,6 @@ public class Driver
     
     [ConcurrencyCheck]
     public byte[] RowVersion { get; set; }
-
     public Car Car { get; set; }
     
     public ICollection<DriverCompetition> DriverCompetitions { get; set; }
